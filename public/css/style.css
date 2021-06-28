@@ -1,0 +1,108 @@
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.participants > li{
+  background-color: black;
+  color: greenyellow;
+  padding: 0%;
+  text-shadow: 1px 1px #ff0000;
+}
+
+.room-name{
+  height: 50px;
+  text-align: center;
+  background-color: black;
+  color: lightgoldenrodyellow;
+  text-shadow: 1px 1px #ff0000;
+  font-size: 30px;
+
+  
+}
+
+.message-box{
+  position: absolute;
+  bottom: 2px;
+}
+
+.leave-room{
+  color: red;
+  background-color: black;
+  /* font-weight: bold; */
+  text-shadow: 1px 1px rgb(65, 225, 190);
+  cursor: pointer;
+}
+
+#msg{
+  width: 80%;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  color: greenyellow;
+  font-size: 20px;
+  height: 50px;
+  padding: 20px;
+}
+
+.chat-box{
+  overflow-y: scroll;
+  background: black;
+  height: -webkit-fill-available;
+  margin-bottom: 110px;
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.chat{
+  background-color: black;
+  max-width: fit-content;
+  padding: 10px;
+  margin: 10px;
+}
+
+.left-chat{
+  border-radius: 10px 30px 30px 10px;
+  background: #212529;
+}
+.right-chat{
+  margin-left: auto;
+  border-radius: 30px 10px 10px 30px;
+  background: blueviolet;
+}
+
+.chat .time{
+  font-size: 15px; 
+  color: gray;
+}
+
+.chat .username{
+  font-size: 20px;
+  text-shadow: 1px 1px red;
+  color: yellow;
+}
+
+.chat .message{
+  overflow-wrap: break-word;
+  color: white;
+  font-size: 18px;
+}
+
+
+
+.chat-container{
+  position: relative;
+  height: 800px;
+}
+
+body{
+  background: black;
+}
