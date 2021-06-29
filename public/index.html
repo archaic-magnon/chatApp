@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 
 <head>
     
@@ -18,7 +18,7 @@
 <body>
 
     <div class="container">
-        <div class="row" id="container1">
+        <div class="row" id="container1" style="margin-top: 100px;">
             <div class="col-md-3 col-lg-3"></div>
             <div class="col-sm-12 col-md-6 col-lg-6 text-center" style="background-color: black; color: white; padding-bottom: 50px;">
                 <div class>
@@ -31,52 +31,35 @@
                         <button class="btn" style="color: white;">Enter Room</button>
                     </form>
                 </div>
+                <div style="margin-top: 100px;">
+                    <h3>How it works</h3>
+                    <span>
+                        Enter your Nick Name and Room ID. <br>
+                        Share Room ID with your friends, they can join the chat.
+                    </span>
+                    <br>
+                    <span style="color: gray; ">works best on Chrome Browser</span>
+                    <div style="margin-top: 100px;">
+                        <span style="font-size: 50px; font-style: italic; text-shadow: 5px 1px red;">ChatApp</span>
+                    </div>
+                </div>
             </div>
+  
         </div>
 
         <!-- chat show -->
         <!-- participants list and chat-->
-        <div class="row" id="container2">
+        <div class="row hide" id="container2">
             <div class="col-md-3 col-lg-3"></div>
             <div class="c col-md-6 col-lg-6 chat-container" style="height: 90vh;">
                 <div class="row">
-                    <div class="col-sm-9 room-name"></div> 
-                    <div class="col-sm-3 leave-room">Leave Room</div> 
+                    <div class="col-sm-12 leave-room text-end">Leave Room</div> 
+                    <div class="col-sm-12 room-name"></div> 
+                    
                 </div>
 
                 <div class="chat-box col-sm-12" style="padding-left: 10px; padding-right: 10px;">
-                    <div class="text-start chat left-chat"> 
-                        <span class="username">meraj</span> 
-                        <span class="time">time</span> <br>
-                        <span class="message"></span>
-                    </div>
-
-                    <div class="text-end chat right-chat"> 
-                        <span class="username">meraj</span> 
-                        <span class="time">time</span> <br>
-                        <span class="message">meddage</span>
-                    </div>
-                    <div class="text-end chat right-chat"> 
-                        <span class="username">meraj</span> 
-                        <span class="time">time</span> <br>
-                        <span class="message">meddage</span>
-                    </div>
-                    <div class="text-end chat right-chat"> 
-                        <span class="username">meraj</span> 
-                        <span class="time">time</span> <br>
-                        <span class="message">meddage</span>
-                    </div>
-
-                     <div class="text-start chat left-chat"> 
-                        <span class="username">meraj</span> 
-                        <span class="time">time</span> <br>
-                        <span class="message">uhlkj</span>
-                    </div>
-
-                    
-                    
-
-
+ 
                 </div>
                 
                 <div class="message-box col-sm-12">
@@ -91,7 +74,7 @@
             </div>
 
             <div class="col-sm-12 col-md-3 col-lg-3" style="height: 400px; background-color: black; overflow: scroll;">
-                <h5 style="color: white;">Room participants</h5>
+                <h5 style="color: white; margin-top: 50px;">Room participants</h5>
                 <ul class="list-group participants" style="">
                     <!-- <li class="list-group-item">Cras justo odio</li>
                     <li class="list-group-item">Vestibulum at eros</li> -->
@@ -127,7 +110,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/enter.js"></script>
 
 </body>
 

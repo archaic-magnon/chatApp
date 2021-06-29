@@ -51,8 +51,11 @@ select:focus {
 .chat-box{
   overflow-y: scroll;
   background: black;
+  height: 100%;
   height: -webkit-fill-available;
-  margin-bottom: 110px;
+  height: -moz-available;
+  width: fill-available;  
+  margin-bottom: 140px;
   scroll-behavior: smooth;
 }
 
@@ -105,4 +108,8 @@ select:focus {
 
 body{
   background: black;
+}
+
+.hide{
+  display: none;
 }

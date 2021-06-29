@@ -115,7 +115,8 @@ function outputUsers(users) {
     users.forEach((user) => {
       const li = document.createElement('li');
       li.classList.add("list-group-item");
-      li.innerText = user.username;
+      if(user.id == socket.id) li.innerText = user.username + " (You)";
+      else li.innerText = user.username;
       userList.appendChild(li);
     });
 }
@@ -154,14 +155,14 @@ function emptyChatMessage(){
 
 function showEnterForm(){
     emptyChatMessage();
-    container1.style.display = ""
-    container2.style.display = "none"
+    container1.classList.remove('hide');
+    container2.classList.add('hide'); 
 }
 
 function showChatBox(){
     emptyChatMessage();
-    container1.style.display = "none"
-    container2.style.display = ""
+    container1.classList.add('hide');
+    container2.classList.remove('hide');
     document.getElementById('msg').focus();
 }
     
